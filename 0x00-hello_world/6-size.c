@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* This program prints size of various types */
+/**
+ * main - Entry point of program
+ * Return: Returns 0
+ */
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
