@@ -1,17 +1,6 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return: Returns 0
- */
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
-
-/**
  * print_alphabet - prints the alphabet in lowercase
  *
  * Return: Has no return value
