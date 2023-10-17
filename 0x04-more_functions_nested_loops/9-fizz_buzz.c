@@ -3,6 +3,9 @@
 
 /**
  * main - Entry point of program
+ * Description: prints fizz (multiples of 3), buzz (multiples of 5)
+ * and FizzBuzz (multiples of 3 and 5)
+ *
  * Return: Returns 0
  */
 int main(void)
