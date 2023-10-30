@@ -1,21 +1,12 @@
 #include "main.h"
 
 /**
- * *_strchr - is the function declaration
- * @s: is the string where the character is to be gotten from
- * @c:is the character to be returned
- *
- * Return: a single character
- */
-char *_strchr(char *s, char c);
-
-/**
- * *_strchr - function Definition
+ * *_strchr - locates a character in a string
  * @s: Is the string to be searched
  * @c: Is the character to find
  *
- * Description: This program finds a character in a string
- * Return: a string as it is a char data type of function
+ * Return: pointer to the first occurrence of the character c in the string s
+ * NULL if the character is not found
  */
 char *_strchr(char *s, char c)
 {

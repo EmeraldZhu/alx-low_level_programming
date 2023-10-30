@@ -1,24 +1,12 @@
 #include "main.h"
 
 /**
- * _strspn - function declaration
- * @s: source string of the program which is in three_main.c
- * @accept: picks the prefix substring
- *
- * Return: is the number of bytes to be returned
- */
-
-unsigned int _strspn(char *s, char *accept);
-
-/**
- * _strspn -is the function definition
+ * _strspn - gets the length of a prefix substring
  * @s: is the string to search
- * @accept:is the the prefic substring to be tested
- * Description: returns number of bytes in which s only has bytes from accept
+ * @accept: the prefix substring to be tested
  *
- * Return: is the  number of bytes
+ * Return: number of bytes in initial segment of s
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes;

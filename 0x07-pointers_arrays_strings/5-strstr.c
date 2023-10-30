@@ -1,24 +1,15 @@
 #include "main.h"
 
 /**
- * *_strstr - is the function declaration
- * @haystack: is the string to be searched
- * @needle: the substring to search for
- *
- * Return: same as the return below
- */
-
-char *_strstr(char *haystack, char *needle);
-
-/**
- * *_strstr - function definition
+ * *_strstr - locates a substring
  * @haystack: that string that will be searched
  * @needle: the substring to search for
  *
- * Description: search for needle in haystack
+ * Description: finds the first occurrence of the substring needle
+ * in the string haystack
+ *
  * Return: the function returns a string or NULL
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	int hay_index;

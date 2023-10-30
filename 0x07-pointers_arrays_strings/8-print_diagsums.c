@@ -1,8 +1,9 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
-  * print_diagsums - Entry point
+  * print_diagsums - prints the sum of the two diagonals
+  * of a square matrix of integers
   * @a: input
   * @size: input
   *
