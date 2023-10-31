@@ -42,46 +42,6 @@ char **allocate_words(int count)
 }
 
 /**
- * allocate_word - allocates word
- * @start: character pointer
- * @end: character pointer
- *
- * Return: word
- * NULL if word == NULL
- */
-char *allocate_word(char *start, char *end)
-{
-	char *word = malloc((end - start + 1) * sizeof(char));
-
-	if (word == NULL)
-	{
-		return (NULL);
-	}
-	strncpy(word, start, end - start);
-	word[end - start] = '\0';
-
-	return (word);
-}
-
-/**
- * free_words - frees words
- * @words: character pointer to a pointer
- * @index: int variable
- *
- * Return: void
- */
-void free_words(char **words, int index)
-{
-	int j;
-
-	for (j = 0; j < index; j++)
-	{
-		free(words[j]);
-	}
-	free(words);
-}
-
-/**
  * strtow - splits a string into words
  * @str: character pointer
  *
@@ -126,12 +86,20 @@ char **strtow(char *str)
 		}
 		if (start != end)
 		{
-			words[index] = allocate_word(start, end);
+			words[index] = malloc((end - start + 1) * sizeof(char));
 			if (words[index] == NULL)
 			{
-				free_words(words, index);
+				int j;
+
+				for (j = 0; j < index; j++)
+				{
+					free(words[j]);
+				}
+				free(words);
 				return (NULL);
 			}
+			strncpy(words[index], start, end - start);
+			words[index][end - start] = '\0';
 			index++;
 		}
 		while (*end == ' ')
