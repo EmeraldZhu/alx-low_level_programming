@@ -64,12 +64,10 @@ char *copy_word(char *start, char *end)
  */
 void free_words(char **words)
 {
-	int i;
-
 	if (words == NULL)
 		return;
 
-	for (i = 0; words[i] != NULL; i++)
+	for (int i = 0; words[i] != NULL; i++)
 	{
 		free(words[i]);
 	}
