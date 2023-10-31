@@ -30,6 +30,11 @@ char **strtow(char *str)
 		}
 	}
 
+	if (count == 0) /* if no words in string */
+	{
+		return (NULL);
+	}
+
 	words = malloc((count + 1) * sizeof(char *));
 
 	if (words == NULL)
@@ -75,4 +80,3 @@ char **strtow(char *str)
 
 	return (words);
 }
-
