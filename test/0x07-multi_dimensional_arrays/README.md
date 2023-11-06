@@ -40,3 +40,4 @@ init_2d_array.c
 Out: init_2d_array
 - Declares and initializes a 2d array separately
 - Initializes 2d array using for loops
+Note: %3d - the 3 is like padding (play around with different values)

@@ -29,7 +29,7 @@ int main(void)
 	{
 		for (j = 0; j < columns; j++)
 		{
-			printf("%3d ", arr[i][j]);
+			printf("%1d ", arr[i][j]);
 		}
 		printf("\n");
 	}
